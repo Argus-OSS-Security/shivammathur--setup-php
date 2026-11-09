@@ -1,15 +1,16 @@
 name: Publish Package
-on:
-  release:
-    types: [created]
-  workflow_dispatch:
-    inputs:
-      skip:
-        description: Skip release to repository
-        required: false
-      tag:
-        description: Tag name
-        required: true
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   release:
+#     types: [created]
+#   workflow_dispatch:
+#     inputs:
+#       skip:
+#         description: Skip release to repository
+#         required: false
+#       tag:
+#         description: Tag name
+#         required: true
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false

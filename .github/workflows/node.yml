@@ -1,21 +1,22 @@
 name: Node workflow
-on:
-  pull_request:
-    branches:
-      - main
-      - develop
-      - verbose
-    paths-ignore:
-      - '**.md'
-      - 'examples/**'
-  push:
-    branches:
-      - main
-      - develop
-      - verbose
-    paths-ignore:
-      - '**.md'
-      - 'examples/**'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches:
+#       - main
+#       - develop
+#       - verbose
+#     paths-ignore:
+#       - '**.md'
+#       - 'examples/**'
+#   push:
+#     branches:
+#       - main
+#       - develop
+#       - verbose
+#     paths-ignore:
+#       - '**.md'
+#       - 'examples/**'
 permissions:
   contents: read
 concurrency:

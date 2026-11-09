@@ -1,8 +1,9 @@
 name: CodeQL Workflow
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 15 * * 6'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     - cron: '0 15 * * 6'
 permissions:
   contents: read
 concurrency:
